@@ -1,0 +1,20 @@
+<!-- src/app/user-profile.component.html -->
+<div *ngIf="user?.data" class="container mt-4">
+    <h1 class="mb-3">User Details</h1>
+    <div class="card">
+        <div class="row no-gutters p-4">
+            <div class="col-md-4 ">
+                <img [src]="user?.data?.avatar" alt="{{ user?.data?.first_name }}"
+                    class="card-img img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">{{ user?.data?.first_name }} {{ user?.data?.last_name }}</h2>
+                    <p class="card-text text-muted fs-3">Email: {{ user?.data?.email }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-secondary text-start mt-4" (click)="goBack()">Back</button>
+
+</div>

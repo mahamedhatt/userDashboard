@@ -1,0 +1,9 @@
+/* src/styles.css */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
